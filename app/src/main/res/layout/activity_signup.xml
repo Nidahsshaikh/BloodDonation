@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BEE1D8"
+    android:padding="16dp"
+    tools:context=".SignupActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="User Name"
+        android:padding="16dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Password"
+        android:padding="16dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Retype Password"
+        android:padding="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repassword"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_bg"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsignup"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:text="Existing user? Go to Signin page"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+</RelativeLayout>

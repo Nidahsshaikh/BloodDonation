@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">dropDownMenuExample</string>
+    <string-array name="languages">
+        <item>C</item>
+        <item>C++</item>
+        <item>Java</item>
+        <item>JavaScript</item>
+        <item>VisualBasic</item>
+    </string-array>
+</resources>

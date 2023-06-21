@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0C2CA"
+    android:padding="16dp"
+    tools:context=".AdminActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:text="Please enter the details below"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttitle"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textSize="24dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_bg"
+        android:text="DELETE"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button67"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/button_bg"
+        android:text="View"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BEE1D8"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DonorRegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="Please Enter Details"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Name"
+        android:paddingHorizontal="16dp"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginVertical="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/dob1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Date of birth"
+        android:inputType="date"
+        android:paddingHorizontal="16dp"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/contact1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="16dp"
+        android:background="@drawable/edittext_bg"
+        android:layout_marginTop="16dp"
+        android:hint="Contact"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/address1"
+        android:background="@drawable/edittext_bg"
+        android:paddingHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:hint="Address"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/button_bg"
+        android:padding="8dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>
